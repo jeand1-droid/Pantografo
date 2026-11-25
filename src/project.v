@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_example #(
+module tt_um_pantografo #(
     parameter integer TIMEOUT = 1000000
 )(
     input  wire [7:0] ui_in,
