@@ -1,20 +1,29 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+This project detects mechanical blockages and travel
+limit faults in an X-Y cutting pantograph.
+
+The circuit monitors movement commands, encoder pulses
+and limit switches.
+
+When a fault is detected, an alarm and a stop request
+are activated until the system is reset.
 
 ## How to test
 
-Explain how to use your project
+1. Apply a 10 MHz clock signal.
+2. Reset the circuit using rst_n.
+3. Activate a movement command.
+4. Generate encoder pulses to simulate normal movement.
+5. Stop the encoder pulses for at least 100 ms.
+6. Verify the mechanical blockage output.
+7. Reset the circuit.
+8. Activate a limit switch during a movement command.
+9. Verify the fault, alarm and stop outputs.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+- Two incremental encoders.
+- Four limit switches.
+- External movement command signals.
+- External alarm and stop interface.
