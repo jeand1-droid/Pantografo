@@ -2,7 +2,7 @@
 
 import cocotb
 from cocotb.clock import Clock
-from cocotb.triggers import ClockCycles, FallingEdge, Timer
+from cocotb.triggers import ClockCycles, FallingEdge, Timer 
 
 
 @cocotb.test()
